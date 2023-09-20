@@ -1,0 +1,9 @@
+#Database Sharding
+
+1. It is way of divinding the database based on different unique id(horizontal partitioning of database).
+3. fixed number of shards(we can avoid by using heirarchical sharding(meaning shards of shard)).
+4. memcache uses consistence hashing for sharding.
+5. we can have indexing on shards.
+6. each shard is basically different database server running.
+
+Problem is JOINS from across the shards.

@@ -1,0 +1,18 @@
+# Load Balancing
+It is basically a way of distributing the load across dofferent servers.
+And consistence Hashing is way of implementing the load across all servers evenly and at same time keeping scalability of servers in mind.
+
+Old way of consistence hanshing does not work when it comes to adding a new server which takes a lot of changes
+we can take some load from each of the server up to new load distribution.
+
+Drawback in first one:
+    it way taking too much change while adding 
+
+Solution:    
+    1. New way of consistence Hashing is to hash the request ID in the form of ring(0,1,4,....m-1).
+    2. and also hash the server by using same hash function and take the modulo by m
+    3. now the request will be served by the nearest server
+    4. why are choosing in this way because hashing is uniform random that is why load will be uniform random.
+    5. load factor will be 1/N.
+In the above solution we had issue when one of the server goes down then nearest server overloads.
+    6. to avoid this we can make k hash function and do the hashing of server and divide the server more evenly.
