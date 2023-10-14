@@ -1,0 +1,21 @@
+advantage of monolith
+1. all monolith architecture rest on single service
+2.its faster because we do local call instead of interservice call
+2.too much coupling
+4. whole code base in single service
+
+
+advantage of micorservice
+1. easy to maintance
+2. parallel working on different service
+3. not easy to design 
+4. easy to scale
+5. easy to extended 
+
+#for larger system/team micorservices are best solution
+
+
+for moving from mono to micro 
+its better to implement new features in new services 
+instead of directly moving directly from mono to micro
+
