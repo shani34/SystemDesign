@@ -17,7 +17,6 @@ select *, count(empid) from employee GROUP BY empid HAVING count(empid)>1;
 
 4. write query to calculate the even and odd record:
 for EVEN:
-
 SELECT * FROM employee WHERE MOD(empid,2)==0;
 
 for ODD:
